@@ -2,7 +2,9 @@ import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_package/pages/avatar_glow.dart';
 import 'package:flutter_package/pages/intl_package.dart';
+import 'package:flutter_package/pages/latihan.dart';
 import 'package:flutter_package/pages/package_faker.dart';
+import 'package:flutter_package/pages/shop_item.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -14,8 +16,8 @@ class _HomePageState extends State<HomePage> {
     IntlPackage(),
     PackageFaker(),
     AvatarGlowing(),
-    Text('Belum DIBUAT'),
-    Text('Belum DIBUAT'),
+    ShopItem(),
+    LatihanPackage(),
   ];
 
   int currentIndex = 2;
@@ -23,7 +25,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AplikasiQ'),
+        title: Text('AplikasiQ Nieech'),
         centerTitle: true,
       ),
       body: widgets[currentIndex],
@@ -33,8 +35,8 @@ class _HomePageState extends State<HomePage> {
           TabItem(icon: Icons.home, title: 'Home'),
           TabItem(icon: Icons.map, title: 'Discovery'),
           TabItem(icon: Icons.add, title: 'Add'),
-          TabItem(icon: Icons.message, title: 'Message'),
-          TabItem(icon: Icons.people, title: 'Profile'),
+          TabItem(icon: Icons.shopping_cart_rounded, title: 'Shop'),
+          TabItem(icon: Icons.search, title: 'Search'),
         ],
         onTap: (value) {
           setState(() {
