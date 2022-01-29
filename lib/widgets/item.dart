@@ -57,21 +57,15 @@ class ItemTokped extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.max,
             children: [
-              Container(
-                width: 50,
-                height: 15,
-                decoration: BoxDecoration(
-                  color: Color(0xFFF27F7F),
-                ),
-                child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(8, 3, 0, 0),
-                  child: Text(
-                    '10%',
-                    style: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 10,
-                      fontWeight: FontWeight.w600,
-                    ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(8, 3, 0, 0),
+                child: Text(
+                  '10%',
+                  style: TextStyle(
+                    backgroundColor: Colors.redAccent[200],
+                    fontFamily: 'Poppins',
+                    fontSize: 10,
+                    fontWeight: FontWeight.w600,
                   ),
                 ),
               ),
